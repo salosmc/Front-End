@@ -1,0 +1,139 @@
+
+.box-body {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+}
+
+.LogoBatman {
+    background-color: #E5E5E5;
+    text-align: center;    
+}
+.titulo {
+    background-color: #C4C4C4;
+    text-align: center;
+    /*esto me lo devolvio figma, no se si esta bien*/
+    font-family: 'Times New Roman';
+
+    /*
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;*/
+    /*-------------------*/
+    color: #005677;
+    text-transform: uppercase;
+/*
+    position: absolute;
+    width: 1440px;
+    height: 60px;
+    left: 0px;
+    top: 188px;*/
+}
+
+h2 {
+
+    /*Tipografia*/
+    /*
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;*/
+    /*line-height: 84.69%;*/
+
+    text-align: left;
+    color: #005677;
+    text-transform: uppercase;
+
+    /*Tamaño de contenedor texto*/
+    /*
+    position: absolute;
+    width: 1041px;
+    height: 30px;
+    left: 213px;*/
+    background-color: #C4C4C4;
+}
+
+.box-contenedor {
+    position: absolute;
+    width: 1041px;
+    height: 107px;
+    left: 213px;
+}
+
+.box-info{
+    position: absolute;
+    width: 800px;
+    left: 20px;
+    top: 55px;
+}
+.info-tipo{
+    font-family: 'Times New Roman';
+    font-style: italic;
+    /*font-weight: bold;*/
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.box-footer{
+    position: absolute;
+    width: 1440px;
+    height: 37px;
+    left: 0px;
+    top: 987px;
+    line-height: 84.69%;
+    background-color: #005677;
+}
+
+.info-footer{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/*
+position: absolute;
+width: 145px;
+height: 17px;
+left: 601px;
+top: 998px;
+
+font-family: Times New Roman;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 84.69%;
+*/
+/* identical to box height, or 17px */
+
+/*
+color: #FFFFFF;
+*/
+
+
+/* ico_instagram */
+
+/*
+position: absolute;
+width: 20px;
+height: 20px;
+left: 772px;
+top: 996px;
+
+background: url(ico_instagram.png);
+
+*/
+/* ico_linkedin */
+
+/*
+position: absolute;
+width: 20px;
+height: 20px;
+left: 818px;
+top: 996px;
+
+background: url(ico_linkedin.png);
+*/
