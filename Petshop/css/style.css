@@ -1,8 +1,30 @@
+/*estilos generales*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*header*/
 
 header{
     background-color: #F0A83E;
     color:#FFFFFF;
-    padding: 10px;
+    /*padding: 10px;*/
+}
+
+.header-style{
+    display : flex;
+    padding : 30px;
+    justify-content: space-between;
 }
 
 .logo-style, img, h1{
@@ -13,6 +35,15 @@ header{
     color: #3C2313;
 }
 
+.nav-style ul{
+    display: flex;
+}
+
+.nav-style ul li{    
+    padding: 10px;
+}
+
+/*
 .nav-style {
     display : inline-block;
     text-align: right;
@@ -22,3 +53,30 @@ header{
     display : inline-block;
     margin-left: 20px;
 }
+*/
+
+
+/*main*/
+
+#productos > div{
+    display: flex;
+}
+
+.titulo-productos{
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-productos ul {
+    display: flex;
+}
+
+.titulo-productos ul li {
+    padding: 10px;
+}
+
+
+.banner-productos{
+    justify-content: center;
+}
+/*footer*/
