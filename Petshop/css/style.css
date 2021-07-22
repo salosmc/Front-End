@@ -1,0 +1,24 @@
+
+header{
+    background-color: #F0A83E;
+    color:#FFFFFF;
+    padding: 10px;
+}
+
+.logo-style, img, h1{
+    display : inline-block;
+}
+
+.logo-style span{
+    color: #3C2313;
+}
+
+.nav-style {
+    display : inline-block;
+    text-align: right;
+}
+
+.nav-style li{
+    display : inline-block;
+    margin-left: 20px;
+}
