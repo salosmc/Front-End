@@ -22,3 +22,9 @@ A continuacion se puede acceder los proyectos realizados en la materia de FRONT 
 
 [Resultados](https://salosmc.github.io/Front-End/CurriculumVitae-Batman/ "Web")
 
+### Heroes
+
+[Diseño](https://www.figma.com/file/NzdP5AErhP4nblWjy9NIX5/CLASE-10?node-id=2701%3A2 "fireware")
+
+[Resultados](https://salosmc.github.io/Front-End/Heroes/ "web")
+
