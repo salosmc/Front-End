@@ -112,3 +112,12 @@
     font-size: 16px;
     padding: 10px;
 }
+
+/*** Responsive */
+/*responsive desktop-tablet*/
+@media all and (max-width: 768px){
+    .container{
+        flex-wrap: wrap;
+    }
+
+}
