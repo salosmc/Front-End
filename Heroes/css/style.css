@@ -144,8 +144,21 @@
     margin: 30px;
 }
 
+.form-contacto h3 {
+    font-size: 72px;
+    color: #333333, 100 %;
+}
+
 .form-contacto p{
     padding: 10px;
+}
+
+.form-contacto p input{
+    width: 620px;
+    height: 60px;
+}
+.form-contacto p .box-mensaje{
+    height: 251px;
 }
 
 

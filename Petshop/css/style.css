@@ -2,7 +2,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 
 ul{
@@ -13,22 +13,62 @@ a{
     text-decoration: none;
 }
 
+body{
+    min-width: 400px;
+}
+
 /*header*/
 
-header{
-    background-color: #F0A83E;
-    color:#FFFFFF;
-    /*padding: 10px;*/
+.after-header{
+    background-color: #222222;
+    color:#F3F3F3;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
 }
+.after-header p{
+    margin-left: 10vw;
+}
+.idioma-moneda select {
+    background-color: #222222;
+    border:#222222;
+    color:#F3F3F3;
+    font-family: 'Roboto''Arial';
+}
+.idioma-moneda{
+    margin-right: 5vw;
+}
+
+ h1 {
+    font-family: 'Roboto';
+    font-style:normal;
+    font-size:30px;
+ }
 
 .header-style{
     display : flex;
-    padding : 30px;
+    padding : 15px;
     justify-content: space-between;
+    align-items: center;
+    background-color: #F0A83E;
+    color:#FFFFFF;
+    height: 4rem;
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+.logo-style{
+    position: relative;
+    min-width: fit-content;
+    margin-left: 2vw;
+}
+.logo-style img, h1{
+    display : inline-block;
 }
 
-.logo-style, img, h1{
-    display : inline-block;
+.logo-style img{
+    margin: 0px 5px ;
+    height: 1.3rem;
 }
 
 .logo-style span{
@@ -37,10 +77,26 @@ header{
 
 .nav-style ul{
     display: flex;
+    margin-right: 2vw;
 }
 
-.nav-style ul li{    
+.nav-style ul li{
+    position: relative;
+    min-width: fit-content;
     padding: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto';
+    font-style: 'normal';
+}
+
+.nav-style ul li i{
+    padding: 5px;
+}
+
+.nav-style-responsiv{
+    display: none;
+    font-size: 2rem;
+    margin-right: 1.5vw;
 }
 
 /*
@@ -58,25 +114,276 @@ header{
 
 /*main*/
 
-#productos > div{
+.banner-style{
+    background-image: url('../img/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-size: cover;
+    display:flex;
+    justify-content: flex-end;
+}
+.info-banner{
     display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 11rem 15px;
 }
 
+p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 1 rem;
+}
+.welcome-style{
+    background-color: #FFFFFF;
+    display:inline-block;
+    font-size: 2.4rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+.boton-welcom{
+    background-color: #F0A83E;
+    display:inline-block;
+    font-size: 1.5rem;
+    padding: 25px;
+    color:#FFFFFF;
+    border-radius: 5px;
+}
+
+.legend-banner{
+    font-size: 1.5rem;
+    padding:1rem;
+}
+/*Productos Destacados*/
+
+h2{
+    font-size: 3rem;
+    color:#3C2313;
+    font-family: 'Roboto';
+}
+
+
+/* .productos div{
+    display: flex;
+} */
+
 .titulo-productos{
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.titulo-productos ul {
-    display: flex;
+.titulo-productos img{
+    height: 80px;
+    margin-top:30px;
+    margin-bottom: 15px;
 }
 
 .titulo-productos ul li {
-    padding: 10px;
+    display:inline-block;
+    padding: 20px 2vw;
+    font-family: 'Roboto';
+    font-style: normal;
+    color:#666666;
+    font-size: 1rem;
 }
 
+.titulo-productos ul li span{
+    font-family: 'Roboto';
+    font-style: normal;
+    color:#666666;
+    font-size: 1rem;
+}
+
+/*catalogo de productos*/
+
+.card-producto{
+    width: 265px;
+    background-color: #FBFAF6;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin: 20px 1vw;
+}
+
+.card-producto h4{
+    color: #3C2313;
+    font-family: 'Roboto';
+    text-align: center;
+    padding: 3px;
+}
+
+.card-producto p{
+    color: #F0A83E;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-align: center;
+    padding: 3px;
+}
 
 .banner-productos{
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
+.form-style{
+    margin: 50px;
+}
+
+.form-style form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.form-style h3{
+    color: #3C2313;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1.7rem;
+    padding: 10px
+}
+
+.form-style form input{
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color:#3C2313;
+    padding: 15px;
+    border: none;
+}
+.form-style form ::placeholder{
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+
+.botton-style {
+    margin: 30px;
+}
+
+
+.form-style form input[type="reset" ]{
+    width: fit-content;
+    padding:10px 30px;
+    background-color: #8A8787;
+    color:#FFFFFF;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+
+.form-style form input[type="submit" ]{
+    width: fit-content;
+    padding:10px 30px;
+    background-color: #F0A83E;
+    color:#FFFFFF;
+    border:none;
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+
 /*footer*/
+.footter-contacto{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footter-style p{
+    color:#FFFFFF;
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+}
+
+.icon-footter{
+    background-color: #8A8787;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 5px solid #786960;
+    position: relative;
+}
+
+.icon-footter i{
+    display:flex;
+    justify-content: center;
+    font-size: 2.5rem;
+
+    margin: 13px;
+    color:#FFFFFF;
+}
+
+.info-footter{
+    display:flex;
+    flex-direction: column ;
+    justify-content: start;
+    margin-left: 3vw;
+}
+
+.footter-style .sub-info{
+    font-size: 1rem;
+    color:#8A8787
+}
+
+.icon-info-footter{
+    display: flex;
+    padding: 20px 5vw;
+}
+
+.footter-style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3C2313;
+    flex-wrap: wrap;
+}
+.footter-style .logo-style span{
+    color:#FFFFFF;
+}
+.footter-style .logo-style {
+    transform: scale(0.8);
+    color: #F0A83E;
+    margin: 50px 5vw;
+}
+
+/*Aplicamos medias Queries*/
+
+@media (max-width: 830px){
+    .nav-style{
+        display: none;
+    }
+    .nav-style-responsiv{
+        display: unset;
+    }
+}
+
+/*ANIMACIONES............*/
+ .header-style .logo-style{
+    animation: traslacion-logo 3.3s 1s;
+} 
+
+ .header-style .logo-style img[src="img/Cat.png"]{
+
+    animation: traslacion-cat 2.5s linear;
+} 
+
+@keyframes traslacion-cat{
+    0%{
+       transform: translate(-100px) rotate(-180deg);
+    }
+   50%{
+       transform: translate(1vw) ;
+    }
+}
+
+@keyframes traslacion-logo {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(1vw);
+    }
+}
