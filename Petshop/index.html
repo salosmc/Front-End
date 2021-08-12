@@ -52,20 +52,15 @@
             <i class="fas fa-bars"></i>
         </div>
 
-
     </div>
     <main>
 
         <section class = "banner-style"> <!--banner accion-->
-            <!-- <ul>
-                <li>¡Es un placer tenerte aquí!</li>
-                <li>¡Comederos en descuento!</li>
-                <li>COMEDEROS</li> 
-            </ul> -->
+ 
             <div class= "info-banner">
                 <p class="welcome-style">¡Es un placer tenerte aquí!</p>
                 <p class="legend-banner">¡Comederos en descuento!</p>
-                <p class="boton-welcom">COMEDEROS</p>
+                <a href="#" class="boton-welcom">COMEDEROS</a>
             </div>
         </section>
         <section class ="productos"> <!--Productos destacados-->
@@ -120,6 +115,16 @@
     </main>
  
     <footter>
+        <div class="footter-subscripcion">
+            <p><i class="far fa-envelope"></i>Suscríbete para más novedades</p>
+            <form action="#" method="POST">
+                <label for="Email"></label>
+                <input type="Email" name= "Email" id=Email placeholder="Ingresá tu correo electronico"> 
+                <label for="Suscribirse"></label>
+                <input type="submit" name="Suscribirse" id="Suscribirse" value="Suscribirme">
+            </form>
+
+        </div>
         <div class="footter-style">
             <div class="footter-contacto">
                 <div class="icon-info-footter">
@@ -162,7 +167,9 @@
                 <img src="img/Dog.png" alt="Img_Cat">
             </div>
         </div>
-        <p>Todos los derechos reservados Front End</p>
+        <div class="footter-copry">
+            <p>Todos los derechos reservados Front End</p>
+        </div>
     </footter>
 </body>
 </html>

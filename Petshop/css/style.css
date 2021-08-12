@@ -15,6 +15,7 @@ a{
 
 body{
     min-width: 400px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*header*/
@@ -225,6 +226,8 @@ h2{
     flex-wrap: wrap;
 }
 
+/*Formulario*/
+
 .form-style{
     margin: 50px;
 }
@@ -285,11 +288,45 @@ h2{
 }
 
 /*footer*/
-.footter-contacto{
+.footter-subscripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0A83E;
+    color: #FFFFFF;
+    padding: 10px 4vw;
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+}
 
+.footter-subscripcion p i{
+    margin-right: 10px;
+} 
+
+.footter-subscripcion form input[type="Email"]{
+    border:none;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.footter-subscripcion form input[type="submit"]{
+    border:none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #3C2313;
+    color:#FFFFFF;
+    font-size: 1.2rem;
+}
+
+
+.footter-subscripcion form input[type="Email"]::placeholder{
+    color: #A0A0A0;
+    font-size: 0.8rem;
+}
+
+
+.footter-contacto{
     display: flex;
     flex-direction: column;
-
 }
 
 .footter-style p{
@@ -349,6 +386,15 @@ h2{
     margin: 50px 5vw;
 }
 
+.footter-copry{
+    display: flex;
+    background-color: #222222;
+    justify-content: center;
+    padding: 3px;
+    color: #FFFFFF;
+}
+
+
 /*Aplicamos medias Queries*/
 
 @media (max-width: 830px){
@@ -362,20 +408,19 @@ h2{
 
 /*ANIMACIONES............*/
  .header-style .logo-style{
-    animation: traslacion-logo 3.3s 1s;
-} 
+    animation: traslacion-logo 2s 0.9s ; /*1er tiempo que dura*/
+} /*2do tiempo en el que inicia*/
 
  .header-style .logo-style img[src="img/Cat.png"]{
-
-    animation: traslacion-cat 2.5s linear;
+    animation: traslacion-cat 2s linear;
 } 
 
 @keyframes traslacion-cat{
     0%{
-       transform: translate(-100px) rotate(-180deg);
+       transform: translate(-5vw) rotate(-180deg);
     }
    50%{
-       transform: translate(1vw) ;
+       transform: translate(11px) ;
     }
 }
 
@@ -385,5 +430,41 @@ h2{
     }
     50%{
         transform: translate(1vw);
+    }
+}
+
+
+/*Footer*/
+
+/* .footter-style .logo-style img[src="img/Dog.png"]:hover{
+    animation: traslacion-dog 2s;
+} */
+
+
+
+.footter-style .logo-style:hover img[src="img/Dog.png"]{
+    animation: traslacion-dog 3s ;
+}
+
+.footter-style .logo-style:hover {
+    animation: traslacion-logo-footter 1s;
+}
+
+
+@Keyframes traslacion-dog {
+    0%{
+        transform: translate(-11px);
+    }
+    100%{
+        transform: translate(200px) rotate(1turn);
+    }
+}
+
+@keyframes traslacion-logo-footter{
+    0%{
+        transform: scale(0.8) translate(0);
+    }
+    50%{
+        transform: scale(0.8) translate(1vw);
     }
 }
