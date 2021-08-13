@@ -14,7 +14,7 @@ a{
 }
 
 body{
-    min-width: 400px;
+    min-width: 470px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -162,6 +162,7 @@ h2{
 }
 
 
+
 /* .productos div{
     display: flex;
 } */
@@ -297,6 +298,7 @@ h2{
     padding: 10px 4vw;
     font-family: 'Roboto';
     font-size: 1.6rem;
+    flex-wrap: wrap;
 }
 
 .footter-subscripcion p i{
@@ -306,7 +308,7 @@ h2{
 .footter-subscripcion form input[type="Email"]{
     border:none;
     border-radius: 10px;
-    padding: 20px 30px;
+    padding: 20px 80px 20px 10px;
 }
 .footter-subscripcion form input[type="submit"]{
     border:none;
@@ -315,6 +317,7 @@ h2{
     background-color: #3C2313;
     color:#FFFFFF;
     font-size: 1.2rem;
+    margin: 10px;
 }
 
 
@@ -327,6 +330,7 @@ h2{
 .footter-contacto{
     display: flex;
     flex-direction: column;
+    margin: 15px 0px;
 }
 
 .footter-style p{
@@ -397,13 +401,40 @@ h2{
 
 /*Aplicamos medias Queries*/
 
-@media (max-width: 830px){
+@media (max-width: 900px){
     .nav-style{
         display: none;
     }
     .nav-style-responsiv{
         display: unset;
     }
+    .footter-subscripcion{
+        justify-content: center;
+    }
+    .footter-subscripcion p{
+       margin: 15px;
+    }
+    .footter-style .footter-contacto{
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 700px){
+
+    .footter-style{
+        flex-direction: column-reverse;
+    }
+    .footter-style .logo-style{
+        margin: 40px 5vw 20px;
+    }
+    .titulo-productos h2{
+        text-align: center;
+    }
+    .welcome-style{
+        text-align: center;
+    }
+
 }
 
 /*ANIMACIONES............*/
@@ -414,6 +445,32 @@ h2{
  .header-style .logo-style img[src="img/Cat.png"]{
     animation: traslacion-cat 2s linear;
 } 
+.nav-style ul li:hover i{
+    animation: nav-pets 2s;
+}
+
+.nav-style-responsiv:hover{
+    animation: boton 2s ;
+}
+/*banner*/
+.boton-welcom:hover{
+    animation: boton 2s;
+}
+/*Formulario*/
+
+.form-style form input[type="submit" ]:hover{
+    animation: boton 2s;
+}
+.form-style form input[type="reset" ]:hover{
+    animation: boton 2s;
+}
+
+/*footter*/
+
+.footter-subscripcion form input[type="submit"]:hover{
+    animation: boton 2s;
+}
+
 
 @keyframes traslacion-cat{
     0%{
@@ -430,6 +487,27 @@ h2{
     }
     50%{
         transform: translate(1vw);
+    }
+}
+
+@keyframes nav-pets{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1) rotate(45deg);
+    }
+    
+}
+
+
+@keyframes boton {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.01);
+        box-shadow: 1px 2px 2px grey ;
     }
 }
 
