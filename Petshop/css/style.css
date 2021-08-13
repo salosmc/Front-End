@@ -529,7 +529,7 @@ h2{
 }
 
 
-@Keyframes traslacion-dog {
+@Keyframes traslacion-dog{
     0%{
         transform: translate(-11px);
     }
