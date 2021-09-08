@@ -1,0 +1,299 @@
+/*Nueva configuracion  de paleta de colores*/
+
+/*color header y copyray #004c4c */
+/*color banner y about #66b2b2 */
+/*Color footer #006666*/
+/*Color de fondo seleccion portfolio rgba(78, 172, 167, 0.9);*/
+
+
+/*Configuraciones generales*/
+
+html {
+  height: 100%;
+  scroll-padding-top: calc(4.5rem - 1px);
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+.page-section .page-section-heading {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .page-section .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #2c3e50;  
+  /* background-color: red; */ /*Color de las lineas divisoras de las secciones*/
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+.divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+.divider-custom .divider-custom-icon {
+  color: #2c3e50; /*Color del icono de la linea divisora*/
+  font-size: 2rem;
+}
+.divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+  /* background-color: red; */ /*linea divisora de las secciones oscuras o de contraste*/
+}
+.divider-custom.divider-light .divider-custom-icon {
+  color: #fff; /*Idem caso anterior*/
+}
+
+.btn-xl {
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+}
+
+.btn-social {
+  border-radius: 100%;
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  background-color: #66b2b2;
+  border: none;
+}
+
+.btn:hover{
+  background-color: #006666;
+}
+
+
+
+/*configuraciones del nav*/
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  /*Cambio color de fondo*/
+  background-color: #004c4c !important;
+}
+#mainNav .navbar-brand {
+  color: #fff;
+  /* color: red; *//*Color del texto "Start BootsTrap" en el Nav*/
+}
+#mainNav .navbar-nav {
+  margin-top: 1rem;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #fff;
+  /* color:red; */ /*Color del texto del menu en el nav*/
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #66b2b2; /*color del texto del menu cuando acerco el cursor*/
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: #fff;
+  /* color:red; */ /*color del texto del menu cuando hago click*/
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #66b2b2;
+  /* color: red; */ /*NO LOGRE VER NINGUN CAMBIO*/
+}
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.8rem;
+  background-color: #66b2b2 !important;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    transition: font-size 0.3s;
+  }
+  #mainNav .navbar-nav {
+    margin-top: 0;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #fff; /*idem al anterior. no se por que lo agrega al responsive*/
+    background: #66b2b2; /*idem, creo que no hace falta*/
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #fff; /*idem , creo que no hace falta*/
+    background: #66b2b2; /*idem, creo que no hace falta*/
+  }
+
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+  /*CREO una nueva clase para cambiar el color del banner*/
+  .banner{
+    background-color: #66b2b2 !important;
+  }
+  .container-avatar{
+    background-color: #fff;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin : 25px
+  }
+  .masthead-avatar{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+/*Configuraciones del formulario*/
+
+.form-floating input.form-control,
+.form-floating textarea.form-control {
+  font-size: 1.5rem;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  border-width: 1px;
+}
+.form-floating input.form-control:focus,
+.form-floating textarea.form-control:focus {
+  box-shadow: none;
+}
+.form-floating label {
+  font-size: 1.5rem;
+  color: #6c757d; 
+  /* color:red; */ /*NO VI ningun cambio*/
+}
+
+/*boton de envio en formulario*/
+#submitButton{
+  background-color: #66b2b2;
+  border : none;
+}
+
+/*configuraciones topes?*/
+.masthead {
+  padding-top: calc(6rem + 74px);
+  padding-bottom: 6rem;
+}
+.masthead .masthead-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+.masthead .masthead-subheading {
+  font-size: 1.25rem;
+}
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.5rem;
+  }
+}
+
+/*configuracion del portafolio*/
+.portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(78, 172, 167, 0.9);
+  /* background-color: red; */ /*Tampoco hace nada*/
+}
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+
+.portfolio-modal .btn-close {
+  color: #66b2b2;
+  /* color: red !important;  */ /*No Cambia absolutamente nada*/
+  font-size: 2rem;
+  padding: 1rem;
+}
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+/*Configuro color de about*/
+#about{
+  background-color: #66b2b2 !important;
+}
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2c3e50;
+  background-color: #006666; /*Cambia color de fondo del footer*/
+  color: #fff;
+}
+
+.copyright {
+  background-color: #004c4c;
+}
+
+
+.img-pop{
+  margin: -30px;
+  margin-bottom: 0!important;
+}

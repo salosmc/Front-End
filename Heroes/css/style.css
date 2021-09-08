@@ -28,27 +28,35 @@
     padding: 5px;
 }
 
+
 .header-style{
 
-    display:flex;
+    /*display:flex;*/
     align-items: center;
     justify-content: space-between;
 
     
     z-index: 999;
     width: 100%;
-    background-color: #00669F;
+    
    
     position: sticky; /*Consultar. no me sale barra de menu fijo*/
     top:0;
-
+    
+}
+h1 {
     padding: 15px;
+    background-color: #00669F;
+}
+
+.nav-style {
+    display : flex;
+    padding:10px;
+    background-color: #001D2D;
+    justify-content: flex-end;
     box-shadow: 0px 7px 3px 0px gray;
 }
 
-.menu-nav{
-    display: flex;
-}
 
 /*main*/
 .container {
@@ -64,7 +72,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*margin: auto;*/
+    padding-bottom: 30px;
     border-radius: 15px 15px 0 0;
     box-shadow: 1px 5px 5px gray;
     text-align: center;
@@ -121,7 +129,7 @@
     color:#F3F3F3;
     background-color: #00669F;
     padding: 15px 30px;
-    margin: 20px;
+    height: 336px;
 }
 
 /*footer*/
@@ -146,11 +154,11 @@
 
 .form-contacto h3 {
     font-size: 72px;
-    color: #333333, 100 %;
+    color: #333333;
 }
 
 .form-contacto p{
-    padding: 10px;
+
 }
 
 .form-contacto p input{
@@ -159,6 +167,27 @@
 }
 .form-contacto p .box-mensaje{
     height: 251px;
+}
+
+label {
+    display: block;
+    margin: .5em 0 0 0;
+  }
+
+input {
+    font-size = 20px;
+}
+
+textarea {
+    resize: none;
+    width: 620px;
+
+}
+
+/* PSeudo Elemnto*/
+
+input:hover {
+    background-color: aqua;
 }
 
 
