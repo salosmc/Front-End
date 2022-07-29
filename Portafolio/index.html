@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +12,11 @@
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -25,15 +28,20 @@
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">Salo</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre Mi</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#portfolio">Portafolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre
+                            Mi</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#contact">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -42,7 +50,7 @@
     <header class="masthead bg-primary text-white text-center banner">
         <div class="container d-flex align-items-center flex-column ">
             <!-- Masthead Avatar Image-->
-            <div class = "container-avatar">
+            <div class="container-avatar">
                 <img class="masthead-avatar mb-5" src="./img/AvatarSalo.svg" alt="Avatar" />
             </div>
             <!-- Masthead Heading-->
@@ -54,7 +62,7 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Maquetador Web - Entusiasta - Autodidacta</p>
+            <p class="masthead-subheading font-weight-light mb-0">Desarrollador Web Full Stack - DevOps</p>
         </div>
     </header>
     <!-- Portfolio Section-->
@@ -69,62 +77,170 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+
+                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!--<img src="..." class="d-block w-100" alt="Imagen1">-->
+                            <h3 class=" text-center text-secondary mb-0">Front I - Certified Tech Developer</h3>
+                            <div class="row justify-content-center container-item-carrusel">
+                                <!-- Portfolio Item 1-->
+                                <div class="col-md-6 col-lg-4 mb-5">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal1">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="./img/lemon-pie.jpeg" alt="lemon-pie" />
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item 2-->
+                                <div class="col-md-6 col-lg-4 mb-5">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal2">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="./img/CVBatman.png" alt="CVBatman" />
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item 3-->
+                                <div class="col-md-6 col-lg-4 mb-5">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal3">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="./img/super.png" alt="Supers" />
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item 4-->
+                                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal4">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="./img/petshop.jpeg" alt="petshop" />
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item 5-->
+                                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal5">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="./img/piza.jpeg" alt="pizzeria" />
+                                    </div>
+                                </div>
+                                <!-- Portfolio Item 6-->
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal6">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="./img/gameshop.jpeg" alt="gameshop" />
+                                    </div>
+                                </div>
                             </div>
-                            <img class="img-fluid" src="./img/lemon-pie.jpeg" alt="lemon-pie" />
+                        </div>
+                        <div class="carousel-item">
+                            <h3 class=" text-center text-secondary mb-0">Front II - Certified Tech Developer</h3>
+                            <div class="row justify-content-center container-item-carrusel">
+                                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal7">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="./img/persona-login.png" alt="TO-DO" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h3 class=" text-center text-secondary mb-0">BackEnd I - Certified Tech Developer</h3>
+                            <div class="row justify-content-center container-item-carrusel">
+                                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal8">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid"
+                                            src="./img/pngtree-atmospheric-hand-drawn-tooth-illustration-elements-png-image_4150828.png"
+                                            alt="apiClinica" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h3 class=" text-center text-secondary mb-0">Proyecto Integrador - Certified Tech Developer
+                            </h3>
+                            <div class="row justify-content-center container-item-carrusel">
+                                <div class="col-md-6 col-lg-4 mb-5 ">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal9">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="./img/logoDB.png" alt="FrontDB" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4 mb-5 ">
+                                    <div class="portfolio-item mx-auto" data-bs-toggle="modal"
+                                        data-bs-target="#portfolioModal10">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div>
+                                        <img class="img-fluid" src="./img/apiIlustracion2.png" alt="BackDB" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="./img/CVBatman.png" alt="CVBatman" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="./img/super.png" alt="Supers" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="./img/petshop.jpeg" alt="petshop" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="./img/piza.jpeg" alt="pizzeria" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="./img/gameshop.jpeg" alt="gameshop" />
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -142,12 +258,24 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Mi nombre es Salomón y soy estudiante de la carrera de <a href="https://www.digitalhouse.com/ar/acciones/certified-tech-developer">Developer en Digital House</a>, esta es una planilla robada de <a href="https://startbootstrap.com/theme/freelancer/">Start Bootstrap</a> donde aprovechó para editar y mostrar los trabajos desarrollados y a desarrollar en la carrera y de ámbito personal.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Pueden visualizar páginas web sin terminar, que representan los conocimientos adquiridos progresivamente desde el inicio en maquetado HTML, luego la incorporación básica de CSS, animaciones , formularios, SASS , responsive y demás.</p></div>
+                    <div class="col-lg-4 ms-auto">
+                        <p class="lead">Mi nombre es Salomón y soy estudiante de la carrera de <a
+                                href="https://www.digitalhouse.com/ar/acciones/certified-tech-developer">Developer en
+                                Digital House</a>, esta es una planilla robada de <a
+                                href="https://startbootstrap.com/theme/freelancer/">Start Bootstrap</a> donde aprovechó
+                            para editar y mostrar los trabajos desarrollados y a desarrollar en la carrera y de ámbito
+                            personal.</p>
+                    </div>
+                    <div class="col-lg-4 me-auto">
+                        <p class="lead">Pueden visualizar páginas web sin terminar, que representan los conocimientos
+                            adquiridos progresivamente desde el inicio en maquetado HTML, luego la incorporación básica
+                            de CSS, animaciones , formularios, SASS , responsive y demás.</p>
+                    </div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://drive.google.com/file/d/1YZxgRyZISpJCVuOBIOKkwmlxQBVbt-E1/view?usp=sharing">
+                    <a class="btn btn-xl btn-outline-light"
+                        href="https://drive.google.com/file/d/1YZxgRyZISpJCVuOBIOKkwmlxQBVbt-E1/view?usp=sharing">
                         <i class="fas fa-download me-2"></i>
                         Descargar CV!
                     </a>
@@ -179,28 +307,36 @@
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                    data-sb-validations="required" />
                                 <label for="name">Nombre y Apellido</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Ingrese un nombre.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                    data-sb-validations="required,email" />
                                 <label for="email">Correo electrónico</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Ingrese un correo electrónico.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Ingrese un correo
+                                    electrónico.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Correo no valido.</div>
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                    data-sb-validations="required" />
                                 <label for="phone">Teléfono</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Ingrese un teléfono.</div>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Ingrese un teléfono.
+                                </div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" type="text"
+                                    placeholder="Enter your message here..." style="height: 10rem"
+                                    data-sb-validations="required"></textarea>
                                 <label for="message">Mensaje</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Ingrese un mensaje</div>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Ingrese un mensaje
+                                </div>
                             </div>
                             <!-- Submit success message-->
                             <!---->
@@ -211,16 +347,20 @@
                                     <div class="fw-bolder">Se envió tu mensaje!</div>
                                     To activate this form, sign up at
                                     <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    <a
+                                        href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             <!-- Submit error message-->
                             <!---->
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar tu mensaje!</div></div>
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error al enviar tu mensaje!</div>
+                            </div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton"
+                                type="submit">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -244,16 +384,20 @@
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
                     <h4 class="text-uppercase mb-4">Redes Sociales</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href=" https://wa.me/+541130515988"><i class="fab fa-fw fa-whatsapp"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/salom%C3%B3n-morales-661428195/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/salosmc"><i class="fab fa-fw fa-github"></i></a>
-                    
+                    <a class="btn btn-outline-light btn-social mx-1" href=" https://wa.me/+541130515988"><i
+                            class="fab fa-fw fa-whatsapp"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1"
+                        href="https://www.linkedin.com/in/salom%C3%B3n-morales-661428195/"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/salosmc"><i
+                            class="fab fa-fw fa-github"></i></a>
+
                 </div>
                 <!-- Footer About Text-->
                 <div class="col-lg-4">
                     <h4 class="text-uppercase mb-4">Freelancer</h4>
                     <p class="lead mb-0">
-                        También hay un breve portafolio que compartí en el pasado en plataformas como 
+                        También hay un breve portafolio que compartí en el pasado en plataformas como
                         <a href="https://www.freelancer.com.ar/u/salosmc">freelancer.com</a> de trabajos de diseño.
                     </p>
                 </div>
@@ -266,12 +410,16 @@
         <div class="container"><small>Copyright &copy;2021</small></div>
     </div>
 
+
     <!-- Portfolio Modals-->
+
     <!-- Portfolio Modal 1 LEMON PIE-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
                 <div class="modal-body text-center pb-5">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -285,13 +433,17 @@
                                     <div class="divider-custom-line"></div>
                                 </div>
                                 <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5 img-pop" src="./img/lemon-pie.jpeg" alt="lemon-pie" />
+                                <img class="img-fluid rounded mb-5 img-pop" src="./img/lemon-pie.jpeg"
+                                    alt="lemon-pie" />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Esta es la primera página que hice, donde vimos una introducción al modelado en HTML, su sintaxis y la importancia de trabajar correctamente con la semántica. </p>
-                                <a  href="https://salosmc.github.io/Front-End/Lemon-Pie/" ><button class="btn btn-primary " data-bs-dismiss="modal">
-                                    <!-- <i class="fas fa-times fa-fw"></i> -->
-                                    Ir a la página
-                                </button></a>
+                                <p class="mb-4">Esta es la primera página que hice, donde vimos una introducción al
+                                    modelado en HTML, su sintaxis y la importancia de trabajar correctamente con la
+                                    semántica. </p>
+                                <a href="https://salosmc.github.io/Front-End/Lemon-Pie/"><button
+                                        class="btn btn-primary " data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Ir a la página
+                                    </button></a>
                             </div>
                         </div>
                     </div>
@@ -300,10 +452,12 @@
         </div>
     </div>
     <!-- Portfolio Modal 2 CV BATMAN-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
                 <div class="modal-body text-center pb-5">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -319,11 +473,15 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5 img-pop" src="./img/CVBatman.png" alt="CVBatman" />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">En esta página, introducimos temas de modelado en caja y una introducción a CSS para editar estilos. También se puede observar que la página es totalmente estática, aprendimos a distinguir qué parámetros del diseño conservamos y que cosas tienen que fluir de manera natural.</p>
-                                <a href="https://salosmc.github.io/Front-End/CurriculumVitae-Batman/"> <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <!-- <i class="fas fa-times fa-fw"></i> -->
-                                    Ir a la página
-                                </button></a>
+                                <p class="mb-4">En esta página, introducimos temas de modelado en caja y una
+                                    introducción a CSS para editar estilos. También se puede observar que la página es
+                                    totalmente estática, aprendimos a distinguir qué parámetros del diseño conservamos y
+                                    que cosas tienen que fluir de manera natural.</p>
+                                <a href="https://salosmc.github.io/Front-End/CurriculumVitae-Batman/"> <button
+                                        class="btn btn-primary" data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Ir a la página
+                                    </button></a>
                             </div>
                         </div>
                     </div>
@@ -332,10 +490,12 @@
         </div>
     </div>
     <!-- Portfolio Modal 3 SPLAT HEROES-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
                 <div class="modal-body text-center pb-5">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -351,11 +511,15 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5 img-pop" src="./img/super.png" alt="Heroes-Super" />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">En esta página se implemmento el concepto de Responsive. Discriminando qué componentes conviene que sean estáticos de manera relativa, como son las CARDS. Profundizamos más en el modelo de caja "flex" y funciones dinámicas en el header para que continúe con el scroll.</p>
-                                <a href="https://salosmc.github.io/Front-End/Heroes/"><button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <!-- <i class="fas fa-times fa-fw"></i> -->
-                                    Ir a la página
-                                </button></a>
+                                <p class="mb-4">En esta página se implemmento el concepto de Responsive. Discriminando
+                                    qué componentes conviene que sean estáticos de manera relativa, como son las CARDS.
+                                    Profundizamos más en el modelo de caja "flex" y funciones dinámicas en el header
+                                    para que continúe con el scroll.</p>
+                                <a href="https://salosmc.github.io/Front-End/Heroes/"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Ir a la página
+                                    </button></a>
                             </div>
                         </div>
                     </div>
@@ -364,10 +528,12 @@
         </div>
     </div>
     <!-- Portfolio Modal 4 PETSHOP-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
                 <div class="modal-body text-center pb-5">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -383,11 +549,15 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5 img-pop" src="./img/petshop.jpeg" alt="petshop" />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">En PetShop, ya empezamos a ver responsive en términos de media queries y animaciones interactivas con el usuario. También nos introducimos a formularios y los posibles cambios nativos del HTML con CSS, como puede ser el uso de un botón o de un div modelado y redireccionado.</p>
-                                <a href="https://salosmc.github.io/Front-End/Petshop/"><button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <!-- <i class="fas fa-times fa-fw"></i> -->
-                                    Ir a la pagina
-                                </button></a>
+                                <p class="mb-4">En PetShop, ya empezamos a ver responsive en términos de media queries y
+                                    animaciones interactivas con el usuario. También nos introducimos a formularios y
+                                    los posibles cambios nativos del HTML con CSS, como puede ser el uso de un botón o
+                                    de un div modelado y redireccionado.</p>
+                                <a href="https://salosmc.github.io/Front-End/Petshop/"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Ir a la pagina
+                                    </button></a>
                             </div>
                         </div>
                     </div>
@@ -396,10 +566,12 @@
         </div>
     </div>
     <!-- Portfolio Modal 5 PIZZA-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
                 <div class="modal-body text-center pb-5">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -415,11 +587,13 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5 img-pop" src="./img/piza.jpeg" alt="pizza" />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Aún está en proceso, para esta práctica ya habíamos visto SAS y atomización de los archivos para su futura escalabilidad. También como el modelado de distintos formularios para practicar más y modelo de caja con grid. </p>
+                                <p class="mb-4">Aún está en proceso, para esta práctica ya habíamos visto SAS y
+                                    atomización de los archivos para su futura escalabilidad. También como el modelado
+                                    de distintos formularios para practicar más y modelo de caja con grid. </p>
                                 <a href="#!"><button class="btn btn-primary disabled" data-bs-dismiss="modal">
-                                    <!-- <i class="fas fa-times fa-fw "></i> -->
-                                    Próximamente!!!
-                                </button></a>
+                                        <!-- <i class="fas fa-times fa-fw "></i> -->
+                                        Próximamente!!!
+                                    </button></a>
                             </div>
                         </div>
                     </div>
@@ -428,10 +602,12 @@
         </div>
     </div>
     <!-- Portfolio Modal 6 GAME SHOP-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
                 <div class="modal-body text-center pb-5">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -447,11 +623,12 @@
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5 img-pop" src="./img/gameshop.jpeg" alt="Game Shop" />
                                 <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Aún está en proceso. Es una de nuestras últimas prácticas para incorporar y consolidar conocimientos.</p>
+                                <p class="mb-4">Aún está en proceso. Es una de nuestras últimas prácticas para
+                                    incorporar y consolidar conocimientos.</p>
                                 <a href="#!"><button class="btn btn-primary disabled" data-bs-dismiss="modal">
-                                    <!-- <i class="fas fa-times fa-fw"></i> -->
-                                    Próximamente !!!
-                                </button></a>
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Próximamente !!!
+                                    </button></a>
                             </div>
                         </div>
                     </div>
@@ -460,6 +637,186 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Portfolio Modal 7 TO-DO -->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">TO-DO</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5 img-pop" src="./img/persona-login.png" alt="TO-DO" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">To-Do es un proyecto base para practicar validaciones y consumir APIs.
+                                    Actualmente sigue en proceso ya que estoy refactorizando y integrando lo aprendido
+                                    recientemente de testing con Jest.</p>
+                                <a href="https://salosmc.github.io/To-Do/"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Ir a la pagina
+                                    </button></a>
+                                <a href="https://github.com/salosmc/To-Do/tree/main"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Repositorio
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal8 Clinica Dental API -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">API Dental</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5 img-pop" src="./img/pngtree-atmospheric-hand-drawn-tooth-illustration-elements-png-image_4150828.png" alt="TO-DO" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">El objetivo de esta API es la gestion de turnos de una clinica dental ,
+                                    asi como sus pacientes y odontologos. Es parte del proyecto final de BackEnd 1 de la
+                                    carrera de Certified Tech Developer.</p>
+                                <a href="https://api-clinica-dental.herokuapp.com/swagger-ui/index.html#/"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Ir a la pagina
+                                    </button></a>
+                                <a href="https://github.com/salosmc/ClinicaOdontologicaAPI"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Repositorio
+                                    </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal9 Front Digital Booking -->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal9"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Front Digital Booking</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5 img-pop" src="./img/logoDB.png" alt="TO-DO" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">El front se desarrollo con React nativo y se hizo uso de Hooks. Tambien se usaron librerias y dependecias como lo son Sweetalert 
+                                    para las notificaciones, apis de google para el uso de mapas como tambien de aws para persistir imagenes en 
+                                    un Bucket de S3.
+                                    Resultado del proyecto integrador desarrollado en el marco de Digital House.
+                                </p>
+                                <a href="http://app-digital-booking.s3-website-us-east-1.amazonaws.com/"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Ir a la pagina
+                                    </button></a>
+                                <a href="https://gitlab.com/otroSalo/digitalbooking/-/tree/main/frontend"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Repositorio
+                                    </button></a>
+                                <p>Servidor habilitado de 14:00hs a 18:00hs (Arg), los dias de semana.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Portfolio Modal9 Front Digital Booking -->
+        <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" aria-labelledby="portfolioModal10"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">BackEnd DB</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5 img-pop" src="./img/apiIlustracion.png" alt="TO-DO" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Desarrollado en el marco de proyecto integrador, se trabajo en equipo aplicando metodologias agiles y culturas DevOps.
+                                    La API fue desarrollada en java utilizando SprintBoot y JPA para la persistencia de datos en MySQL.
+                                    Entre otras cosas se hicieron llamadas nativas a Storede Procedure de MySQL, uso de Sprint Security, JWT HS512 y consulta a APIs de terceros para validar usuarios via mail,.
+                                </p>
+                                <a href="http://apidigitalbooking-env.eba-t7nfsxa7.us-east-1.elasticbeanstalk.com/swagger-ui.html"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Ir a la pagina
+                                    </button></a>
+                                <a href="https://gitlab.com/otroSalo/digitalbooking/-/tree/main/backend"><button class="btn btn-primary"
+                                        data-bs-dismiss="modal">
+                                        <!-- <i class="fas fa-times fa-fw"></i> -->
+                                        Repositorio
+                                    </button></a>
+                                <p>Servidor habilitado de 14:00hs a 18:00hs (Arg), los dias de semana.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
